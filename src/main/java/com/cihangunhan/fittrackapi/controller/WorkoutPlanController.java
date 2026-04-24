@@ -49,4 +49,5 @@ public class WorkoutPlanController {
         workoutPlanService.deletePlan(id);
         return ResponseEntity.noContent().build();
     }
+
 }
