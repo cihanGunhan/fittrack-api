@@ -33,5 +33,6 @@ public class WorkoutPlan {
     @OneToMany(mappedBy = "workoutPlan",
             cascade = CascadeType.ALL,
             orphanRemoval = true)
+    @Builder.Default
     private List<WorkoutDay> workoutDays = new ArrayList<>();
 }
